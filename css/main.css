@@ -1,0 +1,17 @@
+#background_decoration{
+	width: 900px;
+	height: 800px;
+	/*display: block;*/
+	background-image: url(../images/background_mario.png);
+	background-repeat: no-repeat;
+	position: relative;	
+}
+
+#character_mario{
+	position: relative;
+	background-image: url(../images/MarioAnimation.gif); 
+	background-repeat: no-repeat;
+	height: 200px;
+	width: 40px;
+	background-position: 0px 152px;
+}
