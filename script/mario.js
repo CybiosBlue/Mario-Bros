@@ -4,6 +4,8 @@ $("body").bind("keydown", function(event){
 		switch(event.which){
 			case 39: // right
 			/*alert($("#character_mario").css("left"));*/
+				$("#general_song")[0].play();
+				$("#song")[0].pause();
 				$("#character_mario").css("transform", "scaleX(+1)");
 				
 				if($("#character_mario").css("left").slice(0, -2) >= 100)
@@ -33,7 +35,8 @@ $("body").bind("keydown", function(event){
         	break;
 
         	case 38: // up
-        		$("#son")[0].play()
+        		$("#son")[0].play();
+
 	        	$("#character_mario").animate({
 	        	top: "-=100" 
 	        	}, 300)
@@ -41,8 +44,10 @@ $("body").bind("keydown", function(event){
         	break;
 
         	case 37: // left
+        		$("#song")[0].play();
+        		$("#general_song")[0].pause();
         		event.preventDefault();
-        		$("#character_mario").css("transform", "scaleX(-1)");
+        		//$("#character_mario").css("transform", "scaleX(-1)");
         		if($("#character_mario").css("left").slice(0, -2) >= 100)
         		{	
         			$("#character_mario").animate({
