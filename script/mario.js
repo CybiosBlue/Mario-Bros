@@ -45,9 +45,9 @@ $("body").bind("keydown", function(event){
 
         	case 37: // left
         		$("#song")[0].play();
-        		$("#general_song")[0].pause();
+        		//$("#general_song")[0].pause();
+        		$("#character_mario").css("transform", "scaleX(-1)");
         		event.preventDefault();
-        		//$("#character_mario").css("transform", "scaleX(-1)");
         		if($("#character_mario").css("left").slice(0, -2) >= 100)
         		{	
         			$("#character_mario").animate({
