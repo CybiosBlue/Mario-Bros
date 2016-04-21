@@ -3,7 +3,6 @@ $(function(){
 $("body").bind("keydown", function(event){
 		switch(event.which){
 			case 39: // right
-			/*alert($("#character_mario").css("left"));*/
 				$("#general_song")[0].play();
 				$("#song")[0].pause();
 				$("#character_mario").css("transform", "scaleX(+1)");
@@ -61,11 +60,11 @@ $("body").bind("keydown", function(event){
 	        	}, 300, "linear") 
         	break;
 
-        case 40: // down
-        $("#character_mario").animate({top: "+=88"});
-        break;
+        	case 40: // down
+        		$("#character_mario").animate({top: "+=88"});
+        	break;
 
-        default: return;
+        	default: return;
 		}
 		event.preventDefault();
 	});
